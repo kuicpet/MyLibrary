@@ -13,4 +13,28 @@ body {
     justify-content: center;
     line-height: 1.5;
     font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+    min-height: 100vh;
+}
+main {
+    flex: 1 0 auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: bisque;
+}
+ul {
+    list-style: none;
+}
+.home {
+    margin-left: auto;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+footer {
+    padding: 1.5rem;
 }
