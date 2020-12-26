@@ -31,7 +31,9 @@ function clearInputs() {
 //submitForm
 function submitForm() {
     let data = {
-       inputTitle, inputAuthor, inputPage
+       inputTitle: inputTitle.value,
+       inputAuthor: inputAuthor.value,
+       inputPage: inputPage.value
     }
     if(inputTitle.value === ""){
          errorTitle.classList.remove("hide")
@@ -50,7 +52,8 @@ function submitForm() {
         }, 3000);
     } else {
         console.log(data);
-        
+        books.push(data);
+        console.log(books);
     }
 }
 // addEventlisteners
