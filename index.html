@@ -26,9 +26,30 @@
             </div>
         </header>
         <main>
-            <section>
-                <h1>Your Library is Currently Empty</h1>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/47/47612.svg" alt="">
+            <section class="library">
+                <h1>Welcome to My Library</h1>
+                <button class="addBtn">Add Books</button>
+            </section>
+            <section class="modal">
+                <form class="bookForm hide">
+                    <h2>Add a New Book</h2>
+                    <div>
+                        <input class="bookTitle" type="text"  placeholder="Title">
+                        <div class="error hide">Please enter Book Title</div>
+                    </div>
+                    <div>
+                        <input class="authorTitle" type="text"  placeholder="Author">
+                        <div class="error hide">Please enter Book Author</div>
+                    </div>
+                    <div>
+                        <input class="totalPages" type="number" placeholder="Total pages">
+                        <div class="error hide">Please enter Total pages of Book</div>
+                    </div>
+                    <div class="btns">
+                        <button class="cancelBtn">Cancel</button>
+                        <button class="addBookBtn">Add</button>
+                    </div>
+                </form>
             </section>
         </main>
         <footer>

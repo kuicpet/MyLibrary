@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
 }
 html {
     scroll-behavior: smooth;
@@ -15,6 +16,7 @@ body {
     font-family: 'JetBrains Mono', monospace;
     width: 100%;
     min-height: 100vh;
+    color: darkblue;
 }
 main {
     flex: 1 0 auto;
@@ -46,11 +48,95 @@ a {
     font-size: 1.5rem;
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 100;
     color: darkblue;
+    margin: 1rem;
 }
-img {
-    opacity: 10%;
+h2 {
+    font-weight: 100;
+    margin: 1rem auto;
+    text-transform: capitalize;
+}
+.library {
+    display: block;
+}
+.addBtn {
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+    outline: none;
+    border: 2px solid darkblue;
+    color: darkblue;
+    background-color: #ffffff;
+}
+.addBtn:hover {
+    color: #ffffff;
+    background-color: darkblue;
+}
+.modal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bookForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+input {
+    width: 35rem;
+    max-width: 80%;
+    margin: 5px auto;
+    height: 2rem;
+    padding: 0.5rem 0.4rem;
+    border: 2px solid darkblue;
+    font-size: 1.1rem;
+}
+.error {
+    color: red;
+    margin: 0.1rem;
+    padding: 0.5rem;
+    text-emphasis: center;
+    font-size: 0.9rem;
+}
+.btns {
+    margin: 1rem auto;
+}
+.cancelBtn {
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+    outline: none;
+    border: 2px solid red;
+    color: red;
+    background-color: transparent;
+}
+.cancelBtn:hover {
+    color: #ffffff;
+    background-color: red;
+}
+.addBookBtn {
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0.3rem 1.8rem;
+    outline: none;
+    border: 2px solid green;
+    color: green;
+    background-color: transparent;
+}
+.addBookBtn:hover {
+    color: #ffffff;
+    background-color: green;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
 footer {
     display: flex;
