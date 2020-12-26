@@ -96,7 +96,10 @@ input {
     border: 2px solid darkblue;
     font-size: 1.1rem;
 }
-.error {
+.errorInput {
+    border: 2px solid red;
+}
+.errorTitle, .errorAuthor, .errorPage {
     color: red;
     margin: 0.1rem;
     padding: 0.5rem;

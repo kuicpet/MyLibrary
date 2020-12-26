@@ -34,20 +34,20 @@
                 <form class="bookForm hide">
                     <h2>Add a New Book</h2>
                     <div>
-                        <input class="bookTitle" type="text"  placeholder="Title">
-                        <div class="error hide">Please enter Book Title</div>
+                        <input class="bookTitle" type="text"  placeholder="Title" required>
+                        <div class="errorTitle hide">Please enter Book Title</div>
                     </div>
                     <div>
-                        <input class="authorTitle" type="text"  placeholder="Author">
-                        <div class="error hide">Please enter Book Author</div>
+                        <input class="author" type="text"  placeholder="Author" required>
+                        <div class="errorAuthor hide">Please enter Book Author</div>
                     </div>
                     <div>
-                        <input class="totalPages" type="number" placeholder="Total pages">
-                        <div class="error hide">Please enter Total pages of Book</div>
+                        <input class="totalPages" type="number" placeholder="Total pages" required>
+                        <div class="errorPage hide">Please enter Total pages of Book</div>
                     </div>
                     <div class="btns">
-                        <button class="cancelBtn">Cancel</button>
-                        <button class="addBookBtn">Add</button>
+                        <button class="cancelBtn" type="submit">Cancel</button>
+                        <button class="addBookBtn" type="submit">Add</button>
                     </div>
                 </form>
             </section>
