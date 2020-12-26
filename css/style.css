@@ -69,6 +69,7 @@ h2 {
     border: 2px solid darkblue;
     color: darkblue;
     background-color: #ffffff;
+    cursor: pointer;
 }
 .addBtn:hover {
     color: #ffffff;
@@ -117,6 +118,7 @@ input {
     border: 2px solid red;
     color: red;
     background-color: transparent;
+    cursor: pointer;
 }
 .cancelBtn:hover {
     color: #ffffff;
@@ -130,6 +132,7 @@ input {
     border: 2px solid green;
     color: green;
     background-color: transparent;
+    cursor: pointer;
 }
 .addBookBtn:hover {
     color: #ffffff;

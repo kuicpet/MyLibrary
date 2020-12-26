@@ -12,6 +12,7 @@ const inputPage = document.querySelector(".totalPages");
 const addBook = document.querySelector(".addBookBtn");
 
 
+const books = [];
 
 //showForm
 function showForm() {
@@ -23,30 +24,32 @@ function removeForm() {
     bookForm.classList.remove("show");
     library.classList.add("show");
 }
+//clearForm
+function clearInputs() {
+    inputTitle.value = ""
+}
 //submitForm
 function submitForm() {
     let data = {
-        title: inputTitle.value,
-        author: inputAuthor.value,
-        pages: inputPage.value
+       inputTitle, inputAuthor, inputPage
     }
-    if(this.title === ""){
-        errorTitle.classList.remove("hide")
+    if(inputTitle.value === ""){
+         errorTitle.classList.remove("hide")
         setTimeout(() => {
             errorTitle.classList.add("hide");
         }, 3000);
-    } else if(this.author === ""){
+    } if(inputAuthor.value === ""){
         errorAuthor.classList.remove("hide");
         setTimeout(() => {
             errorAuthor.classList.add("hide");
         }, 3000);
-    } else if(this.pages === ""){
+    } if(inputPage.value === ""){
         errorPage.classList.remove("hide");
         setTimeout(() => {
             errorPage.classList.add("hide")
         }, 3000);
     } else {
-        return console.log(data);
+        console.log(data);
         
     }
 }
